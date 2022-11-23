@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 - Layouting</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #header {
+            width: 100%;
+            height: 5em;
+            background: brown;
+            color: white;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+        
+        #sidebar {
+            background: aquamarine;
+            width: 30%;
+            height: 100vh;
+            float: left;
+            position: relative;
+            top: 5em;
+        }
+        #content {
+            background: silver;
+            width: 70%;
+            height: 100vh;
+            float: left;
+            position: relative;
+            top: 5em;
+        }
+        #content h2, #content p {
+            margin: 1em 1em;
+        }
+        #footer {
+            background-color: black;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            position: fixed;
+            float: left;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Sistem Informasi Akademik SMA XYZ</h1>
+    </div>
+    <div id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Portolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content">
+        <h2>Ini Judul Konten</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos animi dolores vitae, eius natus est nihil doloribus esse exercitationem libero nesciunt quasi ratione quaerat officiis aliquid tenetur laudantium corrupti non?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic maxime saepe recusandae libero illum omnis repellendus voluptatem, officiis eveniet ullam veniam, dolor fugiat aperiam sapiente quo maiores eum ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti similique amet a ea, provident cupiditate doloremque nemo blanditiis. Eum, quaerat magnam eos natus cum pariatur dicta reiciendis repudiandae laudantium!</p>
+    </div>
+    <div id="footer">
+        <span>&copy; 2022.Sistem Informasi Akademik SMA XYZ </span> <br/>
+        All Rights Reserved. <br/>
+        Developed by Rizki Cahyana
+    </div>
+</body>
+</html>
